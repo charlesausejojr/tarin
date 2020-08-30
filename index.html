@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,900;1,900&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon-32x32.png">
   <script src="https://kit.fontawesome.com/60c669dcd9.js" crossorigin="anonymous"></script>
 
 
@@ -16,12 +16,12 @@
 
 <body>
 
-  <section id="features">
+  <section class="colored-section main-color" id="features">
 
     <div class="container-fluid">
 
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand logo ml-0" style="font-size: 2rem;" href="">tarin</a>
+        <a class="navbar-brand logo-name ml-0" href="">tarin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,13 +29,13 @@
         <div class="collapse navbar-collapse logo" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#cat">Download</a>
             </li>
           </ul>
         </div>
@@ -43,14 +43,9 @@
 
       <div class="row intro-container">
         <div class="col-lg-6 left-intro-container">
-          <h2 class="intro-content">Content should be here</h2>
-          <p class="intro-speech">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed vitae odio placerat, mollis nulla nec, vehicula lorem. Pellentesque id eros odio.
-            Nulla porttitor orci quis sapien blandit, vel condimentum orci egestas. Sed non sollicitudin nisl.
-            Ut varius rutrum diam, quis elementum odio euismod nec. Curabitur vitae scelerisque neque.
-            Duis lacus purus, vestibulum eu ipsum in, sodales laoreet nulla.</p>
+          <h2 class="intro-content">Tour the Queen City of the Southern Philippines</h2>
           <div class="download-buttons-container">
-            <button type="button" class="btn btn-dark btn-lg ml-0"><i class="fab fa-apple mr-2"></i>Download</button>
+            <button type="button" class="btn btn-light btn-lg ml-0"><i class="fab fa-apple mr-2"></i>Download</button>
             <button type="button" class="btn btn-outline-light btn-lg m-2"><i class="fab fa-google-play mr-2"></i>Download</button>
           </div>
         </div>
@@ -63,33 +58,35 @@
     </div>
   </section>
 
-  <section id="promises">
+  <section class="colored-section" id="promises">
 
-    <div class="row">
+    <div class="container-fluid">
 
-      <div class="col-lg-4 col-md-12">
-        <img class="pr-img"src="images/safe.png" alt="">
-        <h3 class="promise">Safe</h3>
-        <p class="promise-description">Vehicles are maintained daily to be used on its optimal condition.</p>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <img class="pr-img" src="images/affordable.png" alt="">
-        <h3 class="promise">Affordable</h3>
-        <p class="promise-description">We provide affordable prices to all of our services.</p>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <img class="pr-img" src="images/clean.png" alt="">
-        <h3 class="promise">Clean</h3>
-        <p class="promise-description">Sanitized and washed for your convenience.</p>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <img class="pr-img" src="images/safe.png" alt="">
+          <h3 class="promise">Safe</h3>
+          <p class="promise-description">Vehicles are maintained daily to be used on its optimal condition.</p>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <img class="pr-img" src="images/affordable.png" alt="">
+          <h3 class="promise">Affordable</h3>
+          <p class="promise-description">We provide affordable prices to all of our services.</p>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <img class="pr-img" src="images/clean.png" alt="">
+          <h3 class="promise">Clean</h3>
+          <p class="promise-description">Sanitized and washed for your convenience.</p>
+        </div>
+
       </div>
 
     </div>
-
-
   </section>
 
 
-  <section id="testimonials">
+  <section class="white-section" id="testimonials">
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
@@ -130,10 +127,87 @@
 
   </section>
 
+  <section id="pricing">
+
+    <div class="container-fluid">
 
 
+      <h2>Affordable Prices That Gets You on the Wheels</h2>
+      <p>Prices starts at ‎₱2,500!</p>
 
 
+      <div class="row">
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-package">Day-Tour</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price">‎₱2,500.00</h2>
+              <p>24-hour vehicle use</p>
+              <p>Free Towing</p>
+              <p>Sedan Vehicles</p>
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-package">Fun-a-holic</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price">₱3,800.00</h2>
+              <p>36-hour vehicle use</p>
+              <p>Free Towing</p>
+              <p>Van and Sedan Vehicles</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-package">Deluxitron</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price">₱3,800.00</h2>
+              <p>48-hour use</p>
+              <p>Priority Listing</p>
+              <p>Same day repair and towing</p>
+              <p>Van and Sedan Vehicles</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid main-color white-section" id="cta">
+
+    <h3>Discover a whole new experience today.</h3>
+    <div class="bottom-buttons">
+      <button type="button" class="btn btn-dark btn-lg m-3"><i class="fab fa-apple mr-2"></i>Download</button>
+      <button type="button" class="btn btn-light btn-lg m-3"><i class="fab fa-google-play mr-2"></i>Download</button>
+    </div>
+
+  </section>
+
+  <footer class="container-fluid colored-section" id="footer">
+
+        <i class="soc-med-icon fab fa-twitter"></i>
+        <i class="soc-med-icon fab fa-instagram"></i>
+        <i class="soc-med-icon fab fa-facebook"></i>
+        <i class="soc-med-icon fas fa-envelope"></i>
+
+    <p>© Copyright 2020 Tarin</p>
+
+  </footer>
 
 
 

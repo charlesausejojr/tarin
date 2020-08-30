@@ -1,18 +1,30 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
-.container-fluid{
-  padding: 3% 15%;
-}
-.logo{
-  margin-left: 10px;
+.navbar{
   font-family: 'Ubuntu', sans-serif;
+}
+.logo-name{
+  font-size: 2rem;
 }
 .nav-link{
   margin-left: 30px;
 }
+.container-fluid{
+  padding: 7% 15%;
+}
+#features .container-fluid{
+  padding: 3% 15% 7%;
+}
+.colored-section{
+  color: black;
+}
+.white-section{
+  color: white;
+}
 /**** Intro Contents ****/
-#features{
+.main-color{
   background-color: #1C2431;
 }
 .intro-container{
@@ -20,6 +32,7 @@ body{
   color: white;
 }
 .intro-content{
+  text-align: left;
   margin-top: 80px;
   font-size: 3rem;
   font-weight: 900;
@@ -27,18 +40,17 @@ body{
 .intro-speech{
   text-align: justify;
 }
+.download-buttons-container{
+  text-align: left;
+}
 .download-button{
   margin: 2px;
 }
 .car-pic{
-  margin: 50px 0 0 50px;
+  margin: auto;
   width: 100%;
 }
 /* Promises Section */
-#promises{
-  text-align: center;
-  padding: 7% 14%;
-}
 .pr-img{
   width: 40%;
 }
@@ -54,8 +66,6 @@ body{
 
 /* Testimonial Section */
 #testimonials{
-  text-align: center;
-  color: white;
   background-color: #145374;
 }
 .testimonial{
@@ -74,14 +84,42 @@ body{
 .carousel-item{
   padding: 7% 14%;
 }
-
 /* Press section */
 #press{
-  text-align: center;
   background-color: #145374;
   padding-bottom: 30px;
 }
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+/* Pricing Section */
+.pricing-column h2, h3{
+  font-weight: bold;
+}
+.price-package{
+  font-size: 1.5rem;
+}
+.price{
+  font-size: 2rem;
+}
+/* CAT Section */
+#cat{
+  background-color:
+}
+#cat h3{
+  font-size: 3rem;
+}
+/* Footer Section */
+.soc-med-icon{
+  margin: 1%;
+}
+/* Media Query */
+@media (max-width: 1020px)  {
+  .navbar{
+    text-align: right;
+  }
+  #features{
+    text-align: center;
+  }
 }
